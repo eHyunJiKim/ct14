@@ -1,4 +1,3 @@
-
 import requests
 r=requests.get('https://www.vox.com/2018/9/25/17901082/trump-un-2018-speech-full-text')
 data=str(r.text)
@@ -19,12 +18,13 @@ for w in a:
     if w in mydict:
         mydict[w]+=1
     else:
-        mydict[w]=1    
+        mydict[w]=1
+i=0
 for k in sorted(mydict, key=mydict.__getitem__, reverse=True):
-    print('%s: %s'%(k,mydict[k]))
-
-
-
+        print('%s: %s'%(k,mydict[k]))
+        i+=1
+        if i>19:
+            break
 
 
 
