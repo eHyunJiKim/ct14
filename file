@@ -1,0 +1,14 @@
+import matplotlib.pyplot as plt
+with open("") as f:
+    data=f.read()
+    
+d=data.split()
+d2=[]
+for k in d:
+    d2.append(int(k))
+print(,d2)
+plt.plot(D2)
+plt.ylabel()
+plt.show()
+    
+    
